@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from .forms import RegisterUserForm
 from django.core.mail import send_mail
+from .models import CustomUser, Doctor
 
 def login_user(request):
     if request.method == "POST":
@@ -43,3 +44,51 @@ def register_user(request):
     return render(request, 'authenticate/register_user.html', {
         'form':form,
     })
+
+def add_doctors(request):
+    if request.method == "POST":
+        username = request.POST.get('username')
+        first_name = request.POST.get('firstname')
+        last_name = request.POST.get('lastname')
+        email = request.POST.get('email')
+        
+        doc_phone = request.POST.get('phone')
+        doc_specialist = request.POST.get('specialist')
+        doc_age = request.POST.get('age')
+        doc_education = request.POST.get('education')
+        password = request.POST.get('password')
+        
+        
+
+        if CustomUser.objects.filter(email=email).exists():
+           messages.warning(request,'Email Is Already Taken')
+           return redirect('add_doctors')
+        if CustomUser.objects.filter(username=username).exists():
+           messages.warning(request,'Username Is Already Taken')
+           return redirect('add_doctors')
+        else:
+            user = CustomUser(
+                first_name = first_name,
+                last_name = last_name,
+                username = username,
+                email = email,
+                user_type = 1
+            )
+            user.set_password(password)
+            user.save()
+
+            doctor = Doctor(
+                admin = user,
+                doc_phone = doc_phone,
+                doc_specialist = doc_specialist,
+                doc_education = doc_education,
+                doc_age = doc_age,
+                
+                
+            )
+            print(doc_phone, doc_specialist, doc_education, doc_age,"############################")
+            doctor.save()
+            messages.success(request, user.first_name + "  " + user.last_name + " Are Successfully Added !")
+            return redirect('add_doctors')
+   
+    return render(request, 'add_doctors.html')
