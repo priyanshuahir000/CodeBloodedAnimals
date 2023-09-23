@@ -1,6 +1,7 @@
 from tkinter import Widget
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from .models import CustomUser
 from django import forms
 from django.db import models
 
@@ -11,7 +12,7 @@ class RegisterUserForm(UserCreationForm):
     last_name = forms.CharField(label='Last Name', max_length=50, widget=forms.TextInput(attrs={'class':'form-control form-control-lg'}))
     
     class Meta:
-        model = User
+        model = CustomUser
         fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2')
 
     def __init__(self, *args, **kwargs):
