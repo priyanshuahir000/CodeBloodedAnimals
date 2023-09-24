@@ -7,13 +7,14 @@
 
 {% block body %}
 
+  <!--Hero 1 Start-->
 
-<div class="hero-mvp-content">
-	  <h1>Flexible scheduling software to help you succeed</h1>
-		<p class="hero-mvp-caption">With seamless client scheduling, secure payments, and workflow automation, all you have to do is show up on time.</p>
+  <div class="hero-mvp-content">
+	  <h1>Your Health, Our Priority <br> Welcome to Dhirubhai hospital</h1>
+		<p class="hero-mvp-caption">Ready to transform your appointment scheduling process? Sign up for <b>Dhirubhai Hospital</b> and experience the ease and efficiency of our appointment scheduling system. Get started in just a few simple steps</p>
 		<div class="hero-mvp-cta-box">
-		  <a id="signup-main-button" href="{% url 'booking' %}" data-testid="try-now-button">Book Now</a>
-			<p>No credit card needed</p>
+		  <a id="signup-main-button" href="{% url 'register' %}" data-testid="try-now-button">Try scheduling</a>
+			<p>experience the differnce today</p>
 		</div>
 	</div>
 
@@ -23,52 +24,168 @@
         <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
       </div>
       <div class="slide">
-        <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
+        <img src="{% static 'img/2.png' %}" height="100" width="250" alt="" />
       </div>
       <div class="slide">
-        <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
+        <img src="{% static 'img/3.png' %}" height="100" width="250" alt="" />
       </div>
       <div class="slide">
-        <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
+        <img src="{% static 'img/4.png' %}" height="100" width="250" alt="" />
       </div>
       <div class="slide">
-        <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
+        <img src="{% static 'img/5.png' %}" height="100" width="250" alt="" />
       </div>
       <div class="slide">
-        <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
+        <img src="{% static 'img/6.png' %}" height="100" width="250" alt="" />        
       </div>
       <div class="slide">
-        <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
+        <img src="{% static 'img/2.png' %}" height="100" width="250" alt="" />
       </div>
       <div class="slide">
-        <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
+        <img src="{% static 'img/8.png' %}" height="100" width="250" alt="" />
       </div>
       <div class="slide">
-        <img src="{% static 'img/1.png' %}" height="100" width="250" alt="" />
+        <img src="{% static 'img/9.png' %}" height="100" width="250" alt="" />
       </div>  
     </div>
+  </div>
   </div>   
 </div>
 
+  <!--Hero 1 End-->
 
-<h2>Doctors</h2>
+  <!--Section - 1-->
 
+  <section class="automated-booking reskin">
+    <div class="container-fluid">
+      <div class="automated-booking-container">
+        <div class="automated-booking-image">
+        <img src="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/automated-booking.webp" srcset="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/automated-booking.webp 1x, https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/automated-booking@2x.webp 2x, https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/automated-booking@3x.webp 3x, https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/automated-booking@4x.webp 4x" alt="Automated Booking">
+        </div>
+        <div class="automated-booking-content">
+          <h2>Automated booking, built to save you time</h2>
+          <p>Get a branded scheduling page that showcases your services and real-time availability. With easy payment and intake forms, your scheduler is everything your clients need to self-schedule appointments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--{% for i in doctor %}
-<div class="card">
-  <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>{{i.admin.username}}</b></h4> 
-    <p>Architect & Engineer</p> 
-    <a type="button" class="btn btn-primary shadow  mt-5" href="booking">Online Booking</a>
-  </div>
-</div>
-{%endfor%}-->
+  <!--Section - 2-->
+  <section class="simplicity-mvp reskin">
+		<h2>Simple few step process to schedule your appointment</h2>
+		<div class="simplicity-mvp-container">
+			<div class="simplicity-mvp-item">
+				<img src="{% static 'img/a1.png'%}" alt="Your up-to-date availability">
+				<div class="simplicity-mvp-item-content">
+					<h3><b>Registration</b></h3>
+					<p>Customize exactly how and when clients can book with you, host virtual appointments or classes, and block off personal time.</p>
+				</div>
+			</div>
+			<div class="simplicity-mvp-item">
+				<img src="{% static 'img/a2.png'%}" alt="Client Confirmation Text">
+				<div class="simplicity-mvp-item-content">
+					<h3><b>Choose your doctor</b></h3>
+					<p>Manage multiple locations, let clients easily cancel and reschedule themselves, and send automated notifications throughout the scheduling process to keep clients prompt.</p>
+				</div>
+			</div>
+			<div class="simplicity-mvp-item">
+				<img src="{% static 'img/a3.png'%}" alt="Intake Forms for Clients">
+				<div class="simplicity-mvp-item-content">
+					<h3><b>Fix your appointment</b></h3>
+					<p>Book appointments online 24/7, reducing phone call hassles and increasing convenience.</p>
+				</div>
+			</div>
+		</div>
+</section>
 
+<!--Secton - 3-->
+<section class="user-testimonial reskin">
+	<div class="container-fluid">
+		<div class="user-testimonial-container">
+			<figure class="user-testimonial-quote">
+				<blockquote>“When I first started I had new clients come to me not because of my experience, but because I was the easiest to schedule with.”</blockquote>
+				<figcaption>Kim, <br>Peace and Healing for Women</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
 
+<!--Section 4-->
+<section class="feature-list-mvp reskin">
+	<div class="container-fluid">
+	<div class="feature-list-mvp-intro">
+			<h2>More than just a scheduling tool.</h2>
+			<div class="feature-list-mvp-space"></div>
+			<p>A cohesive, user-friendly scheduling software made to support you every step of the way.</p>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="feature-list-mvp-features mvp-swipe" id="slider-mvp" style="display: none;">
+			<div class="mvp-swipe-wrap">
+                <div class="feature-item-mvp"><span class="feature-list-mvp-number">01</span> <span class="feature-list-mvp-name">Manage everything</span> <span class="feature-list-mvp-content">sync calendars, control staff permissions, and work on the go with our mobile app.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">02</span> <span class="feature-list-mvp-name">Accept online payments</span> <span class="feature-list-mvp-content">using trusted payment processors, invoices, and multiple payment options like tips and deposits.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">03</span> <span class="feature-list-mvp-name">Increase revenue</span> <span class="feature-list-mvp-content">with gift certificates, packages, memberships, or group classes. Upsell with add-ons.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">04</span> <span class="feature-list-mvp-name">Feel confident</span> <span class="feature-list-mvp-content">knowing client information is private with built-in HIPAA compliance.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">05</span> <span class="feature-list-mvp-name">Reduce no-shows</span> <span class="feature-list-mvp-content">by sending automated email or SMS notifications and vaulting credit cards to enforce late fees.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">06</span> <span class="feature-list-mvp-name">Impress clients</span> <span class="feature-list-mvp-content">by offering virtual appointments. Send personalized intake forms and store client details.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">07</span> <span class="feature-list-mvp-name">Get booked</span> <span class="feature-list-mvp-content">through social media, email, or your website. Build a beautiful web presence with Squarespace.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">08</span> <span class="feature-list-mvp-name">Customize everything</span> <span class="feature-list-mvp-content">to match your brand experience and limit how and when clients book.</span></div>			</div>
+	</div>
+	<div class="feature-list-mvp-features large-list">
+            <div class="feature-item-mvp"><span class="feature-list-mvp-number">01</span> <span class="feature-list-mvp-name">Manage everything</span> <span class="feature-list-mvp-content">sync calendars, control staff permissions, and work on the go with our mobile app.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">02</span> <span class="feature-list-mvp-name">Accept online payments</span> <span class="feature-list-mvp-content">using trusted payment processors, invoices, and multiple payment options like tips and deposits.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">03</span> <span class="feature-list-mvp-name">Increase revenue</span> <span class="feature-list-mvp-content">with gift certificates, packages, memberships, or group classes. Upsell with add-ons.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">04</span> <span class="feature-list-mvp-name">Feel confident</span> <span class="feature-list-mvp-content">knowing client information is private with built-in HIPAA compliance.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">05</span> <span class="feature-list-mvp-name">Reduce no-shows</span> <span class="feature-list-mvp-content">by sending automated email or SMS notifications and vaulting credit cards to enforce late fees.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">06</span> <span class="feature-list-mvp-name">Impress clients</span> <span class="feature-list-mvp-content">by offering virtual appointments. Send personalized intake forms and store client details.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">07</span> <span class="feature-list-mvp-name">Get booked</span> <span class="feature-list-mvp-content">through social media, email, or your website. Build a beautiful web presence with Squarespace.</span></div>
+<div class="feature-item-mvp"><span class="feature-list-mvp-number">08</span> <span class="feature-list-mvp-name">Customize everything</span> <span class="feature-list-mvp-content">to match your brand experience and limit how and when clients book.</span></div>		</div>
+		<div class="feature-list-mvp__carousel">
+			<span data-item="0" class="feature-list-mvp__carousel-dot feature-list-mvp__carousel-dot--active"></span>
+			<span data-item="1" class="feature-list-mvp__carousel-dot"></span>
+			<span data-item="2" class="feature-list-mvp__carousel-dot"></span>
+			<span data-item="3" class="feature-list-mvp__carousel-dot"></span>
+			<span data-item="5" class="feature-list-mvp__carousel-dot"></span>
+			<span data-item="4" class="feature-list-mvp__carousel-dot"></span>
+			<span data-item="6" class="feature-list-mvp__carousel-dot"></span>
+			<span data-item="7" class="feature-list-mvp__carousel-dot"></span>
+		</div>
+	</div>
+</section>
 
-  
+<!--Secton 5-->
 
+<section class="integration-apps-mvp reskin">
+	<div class="container-fluid">
+		<h2>Integrate with powerful third-party apps.</h2>
+		<ul>
+			<li><img src="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/logo-stripe-mvp.svg" alt="Integration with Stripe" class="logo-stripe"></li>
+			<li><img style="max-width:100%" src="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/logo-square-mvp.svg" alt="Integration with Square" class="logo-square"></li>
+			<li><img src="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/logo-zapier-mvp.svg" alt="Integration with Zapier" class="logo-zapier"></li>
+			<li><img src="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/logo-paypal-mvp.svg" alt="Integration with PayPal" class="logo-paypal"></li>
+			<li><img src="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/logo-ga-mvp.svg" alt="Integration with Google Analytics" class="logo-ga"></li>
+		</ul>
+	</div>
+</section>
 
+<!--Section 5-->
+
+<section class="support-mvp reskin">
+	<div class="support-container">
+		<div class="support-content">
+			<h2>Knowing your name is only the beginning.</h2>
+			<p>Our global award-winning team of real (awesome) humans proudly support over 250,000 customers. Whatever you need, we'll be there to help you take over the world, one problem-solving conversation at a time.</p>
+			<div class="links">
+				<a href="http://help.acuityscheduling.com/">Visit Help Center</a>
+				<a href="http://help.acuityscheduling.com/hc/requests/new">Contact Support</a>
+				<a href="https://learning.squarespace.com/webinars">Webinars</a>
+				<a href="/blog">Blog</a>
+			</div>
+		</div>
+		<div class="support-image">
+			<img src="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/support.webp" srcset="https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/support.webp 1x, https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/support@2x.webp 2x, https://cdn-marketing.acuityscheduling.com/img/marketing/squarespace/v3/support@3x.webp 3x" alt="People with laptops and dog">
+		</div>
+	</div>
+</section>
 
 {% endblock %}

@@ -1,7 +1,7 @@
 from django.db import models
 from datetime import datetime
 
-from members.models import CustomUser, Doctor
+from members.models import CustomUser
 
 SERVICE_CHOICES = (
     ("Doctor care", "Doctor care"),
@@ -27,7 +27,6 @@ TIME_CHOICES = (
 
 class Appointment(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
-    appoiment = models.ForeignKey(Doctor, on_delete = models.CASCADE, null=True, blank=True)
     service = models.CharField(max_length=50, choices=SERVICE_CHOICES, default="Doctor care")
     day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=TIME_CHOICES, default="3 PM")

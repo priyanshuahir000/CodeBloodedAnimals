@@ -4,14 +4,7 @@ from .models import *
 from django.contrib import messages
 
 def index(request):
-    doctor = Doctor.objects.all()
-    context={
-        'doctor':doctor
-    }
-    return render(request, "index.html",context)
-
-def select_doctor(request):
-    pass
+    return render(request, "index.html",{})
 
 def booking(request):
     #Calling 'validWeekday' Function to Loop days you want in the next 21 days:
